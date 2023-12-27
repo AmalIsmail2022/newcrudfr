@@ -42,7 +42,7 @@ const onSubmit = async () => {
              localStorage.setItem("user", JSON.stringify(res.data.data));
              notify("Logged in successfully", "success");
              setTimeout(() => {
-               window.location.href = "#/home";
+               window.location.href = "/home";
                window.location.reload();
              }, 1500);
            } else {
