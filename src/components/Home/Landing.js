@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
-import Zoom from "react-reveal/Zoom";
-import Flip from "react-reveal/Flip";
-import Flash from "react-reveal/Flash";
+// import Zoom from "react-reveal/Zoom";
+// import Flip from "react-reveal/Flip";
+// import Flash from "react-reveal/Flash";
 
 const Landing = () => {
     const [user, setUser] = useState("");
@@ -27,37 +27,37 @@ const Landing = () => {
         {user != "" ? (
           <Link to={"/home"}>
             <div className="landing">
-              <Zoom>
+              {/* <Zoom> */}
                 <h1>
-                  <Flash duration={2000} delay={300}>
+                  {/* <Flash duration={2000} delay={300}> */}
                     <span>EMPLOYEES</span>
-                  </Flash>
-                  <Flash duration={2000} delay={600}>
+                  {/* </Flash> */}
+                  {/* <Flash duration={2000} delay={600}> */}
                     <span> CRUD</span>
-                  </Flash>
-                  <Flash duration={2000} delay={900}>
+                  {/* </Flash> */}
+                  {/* <Flash duration={2000} delay={900}> */}
                     <span> SYSTEM</span>
-                  </Flash>
+                  {/* </Flash> */}
                 </h1>
-              </Zoom>
+              {/* </Zoom> */}
             </div>
           </Link>
         ) : (
           <Link to={"/login"}>
             <div className="landing">
-              <Zoom>
+              {/* <Zoom> */}
                 <h1>
-                  <Flash duration={2000} delay={300}>
+                  {/* <Flash duration={2000} delay={300}> */}
                     <span>EMPLOYEES</span>
-                  </Flash>
-                  <Flash duration={2000} delay={600}>
+                  {/* </Flash> */}
+                  {/* <Flash duration={2000} delay={600}> */}
                     <span> CRUD</span>
-                  </Flash>
-                  <Flash duration={2000} delay={900}>
+                  {/* </Flash> */}
+                  {/* <Flash duration={2000} delay={900}> */}
                     <span> SYSTEM</span>
-                  </Flash>
+                  {/* </Flash> */}
                 </h1>
-              </Zoom>
+              {/* </Zoom> */}
             </div>
           </Link>
         )}
